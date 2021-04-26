@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rtlStyle.css">
+    <link rel="stylesheet" href="css/custom2.css">
+
+</head>
+
+<body dir="rtl">
+    <div class="loading-circle">
+        <img src="images/loading.svg" alt="">
+    </div>
+    <div class="global-wrapping">
+        <div class="topbar ">
+            <div class="container nav justify-content-center ">
+                <div class="language ">
+                    <select class="dropdown form-select ">
+                        <option selected>Language</option>
+                        <option value="1 ">En</option>
+                        <option value="2 ">Ar</option>
+                    </select>
+                </div>
+                <div class="right-nav nav justify-content-center ">
+                    <div class="nav-item">
+                        <button class="open_popup btn" data-toggle="modal" data-target="callme1_popup">Call me back
+                            <figure>
+                                <img src="images/phone-contact.svg" class="img-fluid " alt="Responsive image">
+                            </figure>
+                        </button>
+
+                    </div>
+
+
+                    <div class="nav-item ">
+                        <div class="dropdown-container ">
+                            <label for="openDropdown " class="dropdown ">
+                                <figure class="profile ">
+                                    <img src="images/profile-p.png " alt=" ">
+                                </figure>
+                                <span>
+                                    Mohamed Ali
+                                </span>
+                            </label>
+                            <input type="checkbox " id="openDropdown " hidden>
+                            <div class="dropdown-menu ">
+                                <span>Profile</span>
+                                <span>Privacy policy</span>
+                                <span>Delivery policy</span>
+                                <span>Terms and Conditions</span>
+                                <span>Sign out</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md  navbar-dark">
+                    <a href="http://127.0.0.1:5500/index.html">
+                        <figure>
+                            <img src="images/logo.png" alt="">
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://127.0.0.1:5500/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://127.0.0.1:5500/about-us.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="checkout">
+                <div class="container">
+                    <div class="title-section">
+                        <div class="title">
+                            <h2>
+                                CHECKOUT
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="order-details">
+                            <h4>
+                                DETAILS
+                            </h4>
+                            <div class="total-cost">
+                                <div class="cost">
+                                    <span>
+                                        Total Cost
+                                    </span>
+                                    <p>
+                                        990EGP
+                                    </p>
+                                </div>
+                                <div class="order-number">
+                                    <span>
+                                        Order number
+                                    </span>
+                                    <p>
+                                        TGd332323
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-quantity">
+                                <div class="table-container">
+                                    <table class="table table-bordered table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th class="left" scope="col">ITEM</th>
+                                                <th class="centered" scope="col">QTY</th>
+                                                <th class="centered" scope="col">UNIT PRICE</th>
+                                                <th class="centered" scope="col">TOTAL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="left" scope="row">Pergola light</td>
+                                                <td class="centered">2</td>
+                                                <td class="centered">20 EGP</td>
+                                                <td class="centered">40 EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left" scope="row">3 * 3 Pergola fine wood</td>
+                                                <td class="centered">1</td>
+                                                <td class="centered">600 EGP</td>
+                                                <td class="centered">600 EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left" scope="row">Shipping cost</td>
+                                                <td class="centered">-</td>
+                                                <td class="centered">60EGP</td>
+                                                <td class="centered">60EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left" scope="row">Installation fees</td>
+                                                <td class="centered">-</td>
+                                                <td class="centered">200EGP</td>
+                                                <td class="centered">200EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left" scope="row"></td>
+                                                <td class="centered"></td>
+                                                <td class="centered"></td>
+                                                <td class="centered"></td>
+                                            </tr>
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="coloredtext left" scope="row">Total price + 10% vat</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="centered">990EGP</td>
+                                                </tr>
+                                            </tfoot>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="methods">
+                            <h4>
+                                PAYMENT METHOD
+                            </h4>
+                            <ul class="payment-tabs">
+                                <li class="active" rel="tab1">MASTERCARD</li>
+                                <li rel="tab2">VISA</li>
+                            </ul>
+                            <div class="tab_container">
+                                <h3 class="d_active tab_drawer_heading" rel="tab1">MASTERCARD</h3>
+                                <div id="tab1" class="payment_content">
+                                    <div class="fields">
+                                        <div class="field">
+                                            <label>
+                                                CARD HOLDER NAME
+                                            </label>
+                                            <input type="text" class="input" placeholder="Name on card">
+                                        </div>
+                                        <div class="field">
+                                            <label>
+                                                CARD NAME
+                                            </label>
+                                            <input type="number" class="input" placeholder="Enter 16 number on the card">
+                                        </div>
+                                        <div class="field card-info">
+                                            <div class="card">
+                                                <div class="form-group">
+                                                    <label>
+                                                        Expiry DATE
+                                                    </label>
+                                                    <select class="form-control dropdown" id="exampleFormControlSelect1">
+                                                        <option>Month</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control dropdown">
+                                                        <option>Year</option>
+                                                        <option>2010</option>
+                                                        <option>2011</option>
+                                                        <option>2012</option>
+                                                        <option>2013</option>
+                                                        <option>2014</option>
+                                                        <option>2015</option>
+                                                        <option>2016</option>
+                                                        <option>2017</option>
+                                                        <option>2018</option>
+                                                        <option>2019</option>
+                                                        <option>2020</option>
+                                                        <option>2021</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cv-card">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">CVV</label>
+                                                    <input type="email" class="form-control input" id="exampleFormControlInput1" placeholder="3 numbers">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="http://127.0.0.1:5500/profile.html" class="btn blue-btn confirm">
+                                        CONFIRM PAYMENT
+                                    </a>
+
+                                </div>
+                                <h3 class="tab_drawer_heading" rel="tab2">VISA</h3>
+                                <div id="tab2" class="payment_content">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Umbra</h4>
+                        <ul>
+                            <li>
+                                <a href="#">3x4 Standard umbra</a>
+                            </li>
+                            <li>
+                                <a href="#">4x4 Standard umbra</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom umbra</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & services</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Support@umbra.com</a>
+                            </li>
+                            <li>
+                                <a href="#">+020124548415</a>
+                            </li>
+                            <li>
+                                <a href="#">Call me back</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col social">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/instagram.svg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/facebook.svg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/Twitter_Logo_Blue.svg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>
+                        Copyright @ 2020, Transglobal Eg
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/customScript.js"></script>
+
+</body>
+
+</html>

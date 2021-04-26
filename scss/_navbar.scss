@@ -1,0 +1,23 @@
+.navbar {
+    padding: 32px 0;
+    .navbar-nav {
+        margin-left: auto;
+        .nav-link {
+            color: #B5B5B5;
+            font-size: 20px;
+            font-weight: 700;
+            transition: .3s;
+            margin-left: 50px;
+            &:hover {
+                color: #000000;
+            }
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        background: #28B6F6;
+        margin-right: 15px;
+    }
+}

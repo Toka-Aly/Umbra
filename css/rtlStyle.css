@@ -1,0 +1,573 @@
+[dir="rtl"] main .aboutus-body .section1 .background-title {
+    left: 37%;
+}
+
+[dir="rtl"] main .aboutus-body .section2 .container .right-section {
+    margin-right: 70px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .aboutus-body .section3 .container .left-section {
+    margin-right: 0;
+    margin-left: 70px;
+    text-align: right;
+}
+
+[dir="rtl"] main .aboutus-body .section4 .container {
+    text-align: right;
+}
+
+[dir="rtl"] main .aboutus-body .section4 .container .grid-container {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] footer {
+    text-align: right;
+}
+
+[dir="rtl"] main .checkout .details .methods .payment-tabs li::before {
+    right: 4%;
+    left: 0;
+}
+
+[dir="rtl"] main .checkout .details .methods .payment-tabs li.active::after {
+    left: 0;
+    right: 7%;
+}
+
+[dir="rtl"] footer .social ul li {
+    padding-right: 0;
+    padding-left: 32px;
+}
+
+[dir="rtl"] main .accessories .vertical-tabs .tab button {
+    text-align: right;
+}
+
+[dir="rtl"] main .accessories .vertical-tabs .tabcontent .grid-container .details .buttons {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .accessories .vertical-tabs .tab {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .accessories .vertical-tabs .tabcontent .grid-container .details .buttons .cart-btn {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+[dir="rtl"] .popup .popup_body .popup_contain {
+    text-align: right;
+}
+
+[dir="rtl"] .popup .popup_body .popup_contain .popup-content .buttons .blue-btn figure {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+[dir="rtl"] .checkout {
+    text-align: right;
+}
+
+[dir="rtl"] main .checkout .details .methods {
+    border-left: 0 solid #bfbfbf;
+    padding-left: 0;
+    margin-left: 0;
+    border-right: 1px solid #bfbfbf;
+    padding-right: 19px;
+    margin-right: 19px;
+}
+
+[dir="rtl"] main .checkout .details .order-details .item-quantity .table tbody tr,
+main .checkout .details .order-details .item-quantity .table tbody td {
+    padding: 0;
+    padding: 17px 16px 14px 0;
+}
+
+[dir="rtl"] main .checkout .details .methods .payment-tabs li {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+[dir="rtl"] .order-details {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .checkout .details .methods .payment-tabs li:last-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .checkout .details .methods .tab_container .payment_content .fields .card-info .dropdown {
+    background: url(../images/gray-dropdown.svg) no-repeat center left 18px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+[dir="rtl"] main .checkout .details .methods .tab_container .payment_content .fields .card-info {
+    text-align: right;
+}
+
+[dir="rtl"] main .checkout .details .order-details .item-quantity .left {
+    padding-right: 15px;
+    padding-left: 166px;
+}
+
+[dir="rtl"] main .checkout .details .methods .tab_container .payment_content .fields .field label {
+    right: 15px;
+    left: 0;
+}
+
+[dir="rtl"] .navbar .navbar-nav {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .popup .popup_body .popup_contain .popup-content .fields .field label {
+    left: 0;
+    right: 15px;
+}
+
+[dir="rtl"] .popup .popup_body .popup_contain .popup-content .fields .field .input {
+    direction: rtl;
+}
+
+[dir="rtl"] main .forgetpass .container .info {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .forgetpass .container .info .info-footer .blue-btn {
+    width: 246px;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .forgetpass .container .info .fields .field label {
+    right: 15px;
+    left: 0;
+    text-align: right;
+}
+
+[dir="rtl"] main #modular .content {
+    text-align: right;
+}
+
+[dir="rtl"] main .product-details .title-section .right-side {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .product-details .title-section .right-side .buttons .btn {
+    padding: 0;
+    padding: 15px 40px 15px 69px;
+}
+
+[dir="rtl"] main .product-details .title-section .right-side .buttons .btn figure {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+[dir="rtl"] main .product-details .title-section .right-side .total {
+    margin-right: 0;
+    margin-left: 100px;
+    text-align: right;
+}
+
+[dir="rtl"] main .product-details .material-options {
+    margin-left: 0;
+    margin-right: 40px;
+    text-align: right;
+}
+
+[dir="rtl"] main .product-details .material-options .grid-container .grid-item .forms .form label {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] main .product-details .material-options .grid-container .grid-item .forms .two-forms .radio {
+    margin-left: 17px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .select-dropdown-container .dropdown-trigger {
+    background: url(../images/black-arrow.svg) no-repeat center left 20px;
+}
+
+[dir="rtl"] .select-dropdown-container .dropdown-trigger h4 {
+    margin-left: 0;
+    margin-right: 13px;
+}
+
+[dir="rtl"] main .product-details .product-footer .title .slider-filters li {
+    padding-right: 60px;
+    padding-left: 0;
+}
+
+[dir="rtl"] main .product-details .product-footer .slider-body .slider .details .buttons {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .product-details .material-options .grid-container .grid-item .forms .two-forms .radio input[type="radio"]+.radio-label:before {
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .product-details .product-footer .slider-body .slider .details .buttons .cart-btn {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+[dir="rtl"] .profile {
+    text-align: right;
+}
+
+[dir="rtl"] main .profile .details .order {
+    margin-left: 0;
+    margin-right: 60px;
+    border-left: 0 solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    padding-right: 60px;
+    padding-left: 0;
+}
+
+[dir="rtl"] main .profile .details .order .grid-container .grid-item .item-info {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .profile .details .account-info .fields .two-fields .field {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .profile .details .account-info .changeable .reset {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .profile .details .account-info .fields .address .btn {
+    left: 0;
+    right: auto;
+}
+
+[dir="rtl"] main .profile .details .account-info .fields .address .input {
+    border-radius: 0;
+    border-radius: 30px 10px 10px 30px;
+}
+
+[dir="rtl"] main .profile .details .account-info .fields .field .input {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+[dir="rtl"] main .profile .details .account-info .fields .two-fields .field:last-child {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] main .register .container .info {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .register .container .info {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .register .container .info .fields .two-fields .field {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .register .container .info .fields .two-fields .field:last-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .register .container .info .fields .field label {
+    left: 0;
+    text-align: right;
+    right: 15px;
+}
+
+[dir="rtl"] main .reset .container .info .fields .field label {
+    text-align: right;
+    left: 0;
+    right: 15px;
+}
+
+[dir="rtl"] main .reset .container .info {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .reset .container .info .fields .two-fields .field {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .reset .container .info .fields .two-fields .field:last-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .shop .title-section a {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .shopping-cart {
+    text-align: right;
+}
+
+[dir="rtl"] main .shopping-cart .cart-content .item-quantity {
+    margin-right: 55px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .shopping-cart .cart-content .image-section .grid-container {
+    margin-left: 0;
+    margin-right: 26px;
+}
+
+[dir="rtl"] main .shopping-cart .cart-content .item-quantity .left {
+    padding-right: 16px;
+    padding-left: 166px;
+}
+
+[dir="rtl"] main .sign-in .info {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .sign-in .info .info-footer .blue-btn {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .sign-in .info .fields .field label {
+    left: 0;
+    right: 15px;
+    text-align: right;
+}
+
+[dir="rtl"] .page-heading .container .steps .step {
+    margin-left: 6px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+[dir="rtl"] .order-request {
+    text-align: right;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .two-forms .form {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .two-forms .form:last-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .forms .form label .icon {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .forms .form .dropdown {
+    background: url(../images/black-arrow.svg) no-repeat center left 30px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .user .account .tabs li {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .user .account .tabs li.active::after {
+    left: 0%;
+    right: 19%;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .user .account .tabs li::before {
+    right: 13%;
+    left: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .forms .three-forms .two-forms .radio .radio-label {
+    margin-right: 15px;
+    margin-left: 50px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .forms .three-forms .two-forms {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .user .account .tab_container .tab_content .field {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info .user .account .tab_container .tab_content .field:last-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .vertical-tabs .vertical-tab button {
+    text-align: right;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .vertical-tabs .vertical-tab {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container .form-group .checkmark {
+    right: -17px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container .form-group .container .content .btn {
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container h5 {
+    margin-right: 32px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container span {
+    margin-right: 32px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .buttons .right {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .delivery-date .form-title span {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+[dir="rtl"] .page-heading .container .steps .step.active.finished p {
+    background: #28B6F6 url(../images/finished.svg) no-repeat top -17px left -13px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .delivery-date .preferred-days .days label {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .delivery-date .date .forms {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .buttons span {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .delivery-date .date .forms .form {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .delivery-date .suitable-hours .hours label {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body #seventh .payment-tabs2 li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+[dir="rtl"] main .order-request .card-body #seventh .payment-tabs2 li:last-child {
+    margin-left: 0;
+    margin-right: 30px
+}
+
+[dir="rtl"] main .order-request .card-body #seventh .payment-tabs2 li::before {
+    right: 15px;
+}
+
+[dir="rtl"] main .order-request .card-body #seventh .payment-tabs2 li.active::after {
+    right: 22px;
+}
+
+[dir="rtl"] main .order-request .card-body #seventh .tab_container2 .payment_content2 .fields .card-info .cv-card {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] main .order-request .card-body #seventh .tab_container2 .payment_content2 .fields .card-info .dropdown {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+[dir="rtl"] main .order-request .order-title {
+    margin-right: 60px;
+    margin-left: 0;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .preference .two-forms .form {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+[dir="rtl"] main .order-request .card-body .wizard-tab .details .preference .two-forms .form:last-child {
+    margin: 0;
+}
+
+[dir="rtl"] main .product-details .material-options .grid-container .grid-item .forms .two-forms .radio .red-rectangle {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+@media all and (max-width:768px) {
+    [dir="rtl"] main .order-request .card-body .wizard-tab .details .personal-info {
+        margin-right: 0;
+        margin-left: 80px;
+    }
+    [dir="rtl"] main .checkout .details .methods {
+        margin-right: 0;
+        margin-top: 50px;
+        border: 0;
+    }
+    [dir="rtl"] main .product-details .material-options {
+        margin: 0;
+        margin-top: 50px;
+    }
+    [dir="rtl"] main .shopping-cart .cart-content .item-quantity {
+        margin: 0;
+        margin-top: 50px;
+    }
+    [dir="rtl"] main .profile .details .order {
+        margin-right: 0;
+        border: 0;
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width:375px) {
+    main .product-details .material-options .grid-container .grid-item {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,80 @@
+.popup {
+    text-align: left;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999999;
+    .popup_body {
+        transition: 300ms;
+        .popup_contain {
+            display: flex;
+            position: relative;
+            background: #fff;
+            width: 1004px;
+            height: 477px;
+            margin: 250px auto;
+            box-shadow: 0px 3px 6px #00000017;
+            border-radius: 10px;
+            .buttons {
+                display: flex;
+                align-items: center;
+                .popup_close {
+                    padding: 3px 10px 5px;
+                    bottom: 0;
+                    color: white;
+                    width: 170px;
+                    border-radius: 102px;
+                    height: 60px;
+                }
+                .red-btn {
+                    position: absolute;
+                    top: -7px;
+                    right: -7px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+            .popup-content {
+                padding: 117px 30px 80px;
+                .fields {
+                    .field {
+                        position: relative;
+                        margin-bottom: 75px;
+                        &:last-child {
+                            margin-bottom: 35px;
+                        }
+                        .input {
+                            padding: 18px 16px;
+                            border: 1px solid #BFBFBF;
+                            border-radius: 10px;
+                            width: 440px;
+                            &::placeholder {
+                                color: #B5B5B5;
+                                font-size: 20px;
+                            }
+                        }
+                        label {
+                            position: absolute;
+                            left: 15px;
+                            top: -32px;
+                            color: #070707;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .popup_back {
+            background: rgba(0, 0, 0, 0.15);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}

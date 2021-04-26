@@ -1,0 +1,849 @@
+@media all and (max-width:768px) {
+    .banner {
+        img {
+            height: 100vh;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+        .banner-body {
+            left: 38%
+        }
+    }
+    main {
+        .title {
+            font-size: 25px;
+        }
+        .aboutus-body {
+            .section1 {
+                height: 100%;
+                .bg {
+                    img {
+                        opacity: 0.4;
+                    }
+                }
+                .background-title {
+                    top: 50%;
+                }
+                .right-image {
+                    img {
+                        max-width: 0;
+                        width: 0;
+                    }
+                }
+            }
+            .section2 {
+                padding: 0;
+                .container {
+                    display: block;
+                    .right-section {
+                        margin: 0;
+                    }
+                }
+            }
+            .section3 {
+                .container {
+                    display: block;
+                }
+            }
+            .section4 {
+                .container {
+                    display: block;
+                    .grid-container {
+                        grid-template-columns: auto auto;
+                        .grid-item {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .accessories {
+            .vertical-tabs {
+                display: block;
+                .tab {
+                    display: flex;
+                    width: 100%;
+                    button {
+                        width: auto;
+                    }
+                }
+                .tabcontent {
+                    .grid-container {
+                        grid-template-columns: auto auto;
+                        .grid-item {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .sign-in {
+            display: block;
+            .img-fluid {
+                width: 50%;
+            }
+            .background-title {
+                .title-section {
+                    text-align: center;
+                }
+            }
+        }
+        .forgetpass {
+            .img-fluid {
+                width: 50%;
+            }
+            .container {
+                display: block;
+                .info {
+                    margin: 0;
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .checkout {
+            .title {
+                font-size: 50px;
+            }
+            .details {
+                display: block;
+                .order-details {
+                    .item-quantity {
+                        .table-container {
+                            width: 750px;
+                            margin: 0 auto;
+                        }
+                        .left {
+                            padding-right: 0;
+                        }
+                    }
+                }
+                .methods {
+                    margin: 0 auto;
+                    padding: 0;
+                    border: 0;
+                }
+            }
+        }
+        .order-request {
+            .wizard-steps {
+                flex-wrap: wrap;
+            }
+            .card-body {
+                .wizard-tab {
+                    .details {
+                        display: block;
+                        .personal-info {
+                            margin: 0;
+                        }
+                        .vertical-tabs {
+                            display: block;
+                            .vertical-tab {
+                                display: flex;
+                                width: 100%;
+                                font-size: 15px;
+                                button {
+                                    padding-left: 0;
+                                    padding-right: 4;
+                                    font-size: 15px;
+                                }
+                                .tabcontent {
+                                    .grid-container {
+                                        .form-group {
+                                            .container {
+                                                padding-left: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .delivery-date {
+                            .preferred-days {
+                                .days {
+                                    flex-wrap: wrap;
+                                }
+                            }
+                        }
+                        .order-preview {
+                            .grid-container {
+                                grid-template-columns: auto;
+                                .grid-item {
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                    .table-container {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    .left {
+                        padding-right: 0;
+                    }
+                    .methods {
+                        margin-left: 0;
+                        margin-top: 15px;
+                    }
+                    .hint {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .page-heading {
+                .container {
+                    .steps {
+                        .step {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
+            #eighth {
+                text-align: center;
+            }
+            .order-title {
+                margin-left: 0;
+            }
+        }
+        #modular {
+            .content {
+                left: 45%
+            }
+        }
+        #strong {
+            .content {
+                right: 35%;
+            }
+        }
+        .product-details {
+            .products-body {
+                display: block;
+            }
+            .material-options {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .product-footer {
+                .title {
+                    .slider-filters {
+                        flex-wrap: wrap;
+                        li {
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .profile {
+            .details {
+                display: block;
+                .order {
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-top: 50px;
+                }
+            }
+        }
+        .register {
+            .img-fluid {
+                width: 50%;
+            }
+            .container {
+                display: block;
+                .info {
+                    margin: 0;
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .reset {
+            .img-fluid {
+                width: 50%;
+            }
+            .container {
+                display: block;
+                .info {
+                    margin: 0;
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .shop {
+            .grid-container {
+                grid-template-columns: auto auto;
+            }
+            .title-section {
+                display: block;
+                .title {
+                    margin-bottom: 15px;
+                }
+                a {
+                    h3 {
+                        transform: translate(100%, 15%);
+                    }
+                }
+            }
+        }
+        .shopping-cart {
+            .order-preview {
+                .grid-container {
+                    grid-template-columns: auto;
+                    .grid-item {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .cart-content {
+                display: block;
+                .image-section {
+                    .grid-container {
+                        grid-gap: 20px;
+                    }
+                }
+                .item-quantity {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .popup {
+        .popup_body {
+            .popup_contain {
+                width: 700px;
+                display: block;
+                .popup-content {
+                    .fields {
+                        .field {
+                            .input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                figure {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:375px) {
+    .topbar {
+        .container {
+            a {
+                font-size: 0px
+            }
+            .nav-item {
+                .btn {
+                    font-size: 0px
+                }
+            }
+            .nav-item {
+                margin-left: 15px;
+                figure {
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                }
+                .dropdown-container {
+                    .dropdown {
+                        span {
+                            font-size: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .title {
+            font-size: 25px;
+        }
+        .aboutus-body {
+            .section1 {
+                height: 100%;
+                .bg {
+                    img {
+                        opacity: 0.4;
+                    }
+                }
+                .background-title {
+                    top: 50%;
+                }
+            }
+            .section2 {
+                padding: 0;
+                .container {
+                    display: block;
+                    margin-top: 50px;
+                    .right-section {
+                        margin: 0;
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .section3 {
+                padding-top: 66px;
+                .container {
+                    display: block;
+                }
+            }
+            .section4 {
+                .container {
+                    display: block;
+                    .grid-container {
+                        grid-template-columns: auto;
+                        .grid-item {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .accessories {
+            .vertical-tabs {
+                display: block;
+                .tab {
+                    display: flex;
+                    flex-wrap: wrap;
+                    button {
+                        padding: 22px 12px;
+                        text-align: center;
+                        font-size: 11px;
+                        width: auto;
+                    }
+                }
+                .tabcontent {
+                    .grid-container {
+                        grid-template-columns: auto;
+                        .grid-item {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .sign-in {
+            display: block;
+            .img-fluid {
+                width: 100%;
+            }
+            .info {
+                .info-footer {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .register {
+            .container {
+                display: block;
+                .info {
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .forgetpass {
+            .container {
+                display: block;
+                .img-fluid {
+                    width: 100%;
+                }
+                .info {
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .reset {
+            .container {
+                display: block;
+                .info {
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .checkout {
+            .details {
+                display: block;
+                .methods {
+                    .tab_container {
+                        .payment_content {
+                            .fields {
+                                .card-info {
+                                    display: block;
+                                    .cv-card {
+                                        .form-group {
+                                            .input {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .field {
+                                    .input {
+                                        width: 100%;
+                                    }
+                                    .dropdown {
+                                        width: 100%;
+                                    }
+                                    .card {
+                                        display: block;
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .payment-tabs {
+                        li {
+                            padding: 18px 35px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .order-details {
+                    .item-quantity {
+                        .table-container {
+                            width: 350px;
+                            margin: 0 auto;
+                        }
+                        .left {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .order-request {
+            .card-body {
+                .wizard-tab {
+                    .details {
+                        .input {
+                            width: 100%;
+                        }
+                        .forms {
+                            .three-forms {
+                                display: block;
+                            }
+                            .types {
+                                .two-forms {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .personal-info {
+                            margin-top: 30px;
+                            .two-forms {
+                                display: block;
+                                .form {
+                                    margin-right: 0;
+                                }
+                            }
+                            .tooltip {
+                                .tooltiptext {
+                                    max-width: 200px;
+                                    left: 41px;
+                                }
+                            }
+                            .user {
+                                .account {
+                                    .tabs {
+                                        flex-wrap: wrap;
+                                        li {
+                                            margin-top: 30px;
+                                            margin-bottom: 15px;
+                                        }
+                                    }
+                                    .tab_container {
+                                        .tab_content {
+                                            .two-fields {
+                                                display: block;
+                                            }
+                                            .field {
+                                                margin-right: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .delivery-date {
+                            .date {
+                                .forms {
+                                    display: block;
+                                    .form {
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        .vertical-tabs {
+                            display: block;
+                            .vertical-tab {
+                                flex-wrap: wrap;
+                                button {
+                                    width: auto;
+                                }
+                            }
+                            .tabcontent {
+                                .grid-container {
+                                    grid-template-columns: auto;
+                                }
+                            }
+                        }
+                        .hint {
+                            overflow-y: scroll;
+                        }
+                        .suitable-hours {
+                            .hours {
+                                flex-wrap: wrap;
+                            }
+                        }
+                        .order-preview {
+                            display: block;
+                            .grid-container {
+                                grid-gap: 80px;
+                                margin-top: 50px;
+                            }
+                            .order-details {
+                                margin-top: 30px;
+                            }
+                        }
+                        .terms {
+                            .paragraph {
+                                h3 {
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                    .buttons {
+                        .btn {
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                #fourth,
+                #fifth {
+                    .buttons {
+                        display: block;
+                        .right {
+                            display: block;
+                            .btn {
+                                margin: 0;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+                #seventh {
+                    .methods {
+                        .tab_container2 {
+                            .payment_content2 {
+                                .fields {
+                                    .card-info {
+                                        display: block;
+                                        .cv-card {
+                                            .form-group {
+                                                .input {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .field {
+                                        .input {
+                                            width: 100%;
+                                        }
+                                        .dropdown {
+                                            width: 100%;
+                                        }
+                                        .card {
+                                            display: block;
+                                            margin-bottom: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .payment-tabs2 {
+                            li {
+                                padding: 18px 35px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product-details {
+            .title-section {
+                display: block;
+                .right-side {
+                    margin-top: 25px;
+                    .total {
+                        margin-right: 26px;
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .material-options {
+                .grid-container {
+                    grid-template-columns: auto;
+                }
+            }
+            .product-footer {
+                .title {
+                    display: block;
+                    .slider-filters {
+                        flex-wrap: wrap;
+                        margin-top: 50px;
+                        li {
+                            margin-bottom: 25px;
+                            padding-right: 24px;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .profile {
+            .details {
+                .account-info {
+                    .changeable {
+                        display: block;
+                    }
+                    .fields {
+                        .two-fields {
+                            display: block;
+                            .field {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                .order {
+                    border: 0;
+                    .grid-container {
+                        .grid-item {
+                            display: block;
+                            margin: 0 auto;
+                            padding-bottom: 60px;
+                            .item-info {
+                                margin-left: 0;
+                                .btn {
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .shopping-cart {
+            .order-preview {
+                .grid-container {
+                    grid-template-columns: auto;
+                    .grid-item {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .cart-content {
+                display: block;
+                .image-section {
+                    .grid-container {
+                        grid-gap: 20px;
+                    }
+                }
+                .item-quantity {
+                    margin-left: 0;
+                }
+            }
+        }
+        .shop {
+            .grid-container {
+                grid-template-columns: auto;
+            }
+            .title-section {
+                display: block;
+                .title {
+                    margin-bottom: 15px;
+                }
+                a {
+                    h3 {
+                        transform: translate(70%, 5%);
+                    }
+                }
+            }
+        }
+    }
+    .page-heading {
+        .container {
+            .steps {
+                .step {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .popup {
+        .popup_body {
+            .popup_contain {
+                width: 375px;
+                display: block;
+            }
+        }
+    }
+}

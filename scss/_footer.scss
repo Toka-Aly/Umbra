@@ -1,0 +1,36 @@
+footer {
+    background: $primaryColor;
+    padding-top: 70px;
+    padding-bottom: 15px;
+    margin-top: auto;
+    .col {
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 28px;
+        }
+        li {
+            margin-bottom: 13px;
+            a {
+                font-size: 20px;
+                color: white;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .social {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                padding-right: 32px;
+            }
+        }
+    }
+    .copyright {
+        margin-top: 92px;
+        font-size: 14px;
+        color: white;
+    }
+}

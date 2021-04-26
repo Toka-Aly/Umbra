@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rtlStyle.css">
+    <link rel="stylesheet" href="css/custom2.css">
+</head>
+
+<body dir="rtl">
+    <div class="topbar">
+        <div class="container nav justify-content-center">
+            <div class="language">
+                <select class="dropdown form-select">
+                    <option selected>Language</option>
+                    <option value="1">En</option>
+                    <option value="2">Ar</option>
+                </select>
+            </div>
+            <div class="right-nav nav justify-content-center">
+                <div class="nav-item">
+                    <button class="open_popup btn" data-toggle="modal" data-target="callme1_popup">Call me back
+                        <figure>
+                            <img src="images/phone-contact.svg" class="img-fluid " alt="Responsive image">
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="nav-item">
+                    <a href="http://127.0.0.1:5500/sign-in.html">
+                        <figure>
+                            <img src="images/login.svg" class="img-fluid " alt="Responsive image">
+                        </figure>
+                        <span>
+                            Sign in / Register
+
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md  navbar-dark">
+                <a href="http://127.0.0.1:5500/index.html">
+                    <figure>
+                        <img src="images/logo.png" alt="">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5500/Umbra2/about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sign-in">
+                <div class="background-title">
+                    <figure>
+                        <img src="images/sign-in.svg" class="img-fluid " alt="Responsive image">
+                    </figure>
+                    <div class="title-section">
+                        <div class="title">
+                            <h2>
+                                SIGN IN
+                            </h2>
+                        </div>
+                        <a href="http://127.0.0.1:5500/register.html" class="btn outline-btn">
+                            Create account
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="fields">
+                        <div class="field">
+                            <label>
+                                EMAIL ADDRESS
+                            </label>
+                            <input type="text" class="input" placeholder="@email.com">
+                        </div>
+                        <div class="field">
+                            <label for="">
+                                PASSWORD
+                            </label>
+                            <input type="number" class="input" placeholder="Enter your secure code">
+                        </div>
+                    </div>
+                    <div class="info-footer">
+                        <a href="http://127.0.0.1:5500/profile.html" class="btn blue-btn">
+                            Sign in
+                        </a>
+
+                        <a href="http://127.0.0.1:5500/forget.html">
+                            Forget Password
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup" id="callme1_popup">
+        <div class="popup_main">
+            <div class="popup_body ">
+                <div class="popup_back"></div>
+                <div class="popup_contain">
+                    <figure>
+                        <img src="images/callme-popup.png" class="img-fluid " alt="Responsive image">
+                    </figure>
+                    <div class="popup-content">
+                        <div class="fields">
+                            <div class="field form-group">
+                                <label>
+                                    NAME
+                                </label>
+                                <input type="text" class="input" placeholder="Full name">
+                            </div>
+                            <div class="field form-group">
+                                <label>
+                                    PHONE NUMBER
+                                </label>
+                                <input type="number" class="input" placeholder="+02Phone">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="popup_close btn blue-btn" data-modal-dismiss>Call me</div>
+                            <div class="popup_close btn red-btn" data-modal-dismiss>X</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/customScript.js"></script>
+</body>
+
+</html>
