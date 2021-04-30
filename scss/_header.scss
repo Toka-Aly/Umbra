@@ -3,8 +3,5 @@ header {
     top: 53px;
     width: 100%;
     background-color: white;
-    z-index: 2;
-    @media all and (max-width: 375px) {
-        top: 110px;
-    }
+    z-index: 1;
 }

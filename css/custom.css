@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.banner {
+    background: url(../images/banner.png) no-repeat center;
+    height: 100vh;
+    background-position: center;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-size: cover;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.banner .banner-body {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.banner .banner-body .title {
+    margin-bottom: 16px;
+}
+
+@media all and (max-width: 375px) {
+    .banner .banner-body {
+        left: 38%;
+    }
+}
+
+.banner .banner-body p {
+    font-size: 20px;
+}
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -405,6 +439,11 @@ header {
 .navbar-dark .navbar-toggler {
     background: #28B6F6;
     margin-right: 15px;
+}
+
+main .block {
+    padding: 120px;
+    text-align: center;
 }
 
 main .block .col-sm h3 {
@@ -2814,6 +2853,21 @@ main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .
     position: relative;
 }
 
+main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container .grid-item .btn {
+    position: absolute;
+    bottom: 40px;
+    left: 130px;
+}
+
+main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container .form-group {
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* When the checkbox is checked, add a blue background */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */
+}
+
 main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container .form-group .container {
     display: block;
     position: relative;
@@ -3303,4 +3357,38 @@ footer .copyright {
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+.banner {
+    background: url(../images/banner.png) no-repeat center;
+    height: 100vh;
+    background-position: center;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-size: cover;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.banner .banner-body {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.banner .banner-body .title {
+    margin-bottom: 16px;
+}
+
+@media all and (max-width: 375px) {
+    .banner .banner-body {
+        left: 38%;
+    }
+}
+
+.banner .banner-body p {
+    font-size: 20px;
 }

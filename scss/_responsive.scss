@@ -1646,14 +1646,13 @@
                 }
             }
             .products-body {
-                .stander {
-                    .vertical-text {
-                        &::before {
-                            content: none;
-                        }
-                        &::after {
-                            content: none;
-                        }
+                .vertical-text {
+                    display: none;
+                    &::before {
+                        content: none;
+                    }
+                    &::after {
+                        content: none;
                     }
                 }
             }
