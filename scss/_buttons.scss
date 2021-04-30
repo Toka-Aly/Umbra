@@ -28,18 +28,6 @@
     color: white;
 }
 
-.red-outline {
-    border: 1px solid #EF0E2C;
-    color: #EF0E2C;
-    background: transparent;
-    transition: .5s;
-    &:hover {
-        background: #EF0E2C;
-        border: 1px solid transparent;
-        color: white;
-    }
-}
-
 .outline-btn {
     border: 1px solid $primaryColor;
     color: $primaryColor;

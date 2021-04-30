@@ -1,10 +1,10 @@
 header {
     position: fixed;
-    top: 100px;
+    top: 53px;
     width: 100%;
     background-color: white;
-    z-index: 9999;
+    z-index: 2;
     @media all and (max-width: 375px) {
-        top: 92px;
+        top: 110px;
     }
 }

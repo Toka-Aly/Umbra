@@ -9,16 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/rtlStyle.css">
-    <link rel="stylesheet" href="css/custom2.css">
-
+    <link rel="stylesheet" href="scss/custom.css">
 </head>
 
 <body>
-    <div class="loading-circle">
-        <img src="images/loading.svg" class="img-fluid " alt="Responsive image">
-    </div>
-    <div class="global-wrapping">
+    <div class="global-wrap">
         <div class="topbar">
             <div class="container nav justify-content-center">
                 <div class="language">
@@ -33,13 +28,44 @@
                         <button class="open_popup btn" data-toggle="modal" data-target="callme1_popup">Call me
                             back</button>
                     </div>
-
+                    <div class="popup" id="callme1_popup">
+                        <div class="popup_main">
+                            <div class="popup_body ">
+                                <div class="popup_back"></div>
+                                <div class="popup_contain">
+                                    <figure>
+                                        <img src="images/callme-popup.png" alt="">
+                                    </figure>
+                                    <div class="popup-content">
+                                        <div class="fields">
+                                            <div class="field">
+                                                <label>
+                                                    NAME
+                                                </label>
+                                                <input type="text" class="input" placeholder="Full name">
+                                            </div>
+                                            <div class="field">
+                                                <label>
+                                                    PHONE NUMBER
+                                                </label>
+                                                <input type="number" class="input" placeholder="+02Phone">
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <div class="popup_close btn blue-btn" data-modal-dismiss>Call me</div>
+                                            <div class="popup_close btn red-btn" data-modal-dismiss>X</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="nav-item">
                         <div class="dropdown-container">
                             <label for="openDropdown" class="dropdown">
                                 <figure>
-                                    <img src="images/profile-p.png" class="img-fluid " alt="Responsive image">
+                                    <img src="images/profile-p.png" alt="">
                                 </figure>
                                 <span>
                                     Mohamed Ali
@@ -55,7 +81,14 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="nav-item menu-area cart">
+                        <a href="http://127.0.0.1:5500/shopping-cart.html">
+                            <figure>
+                                <img src="images/add-to-cart.svg" alt="">
+                            </figure>
+                            <span class="count">10</span> cart
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,7 +97,7 @@
                 <nav class="navbar navbar-expand-md  navbar-dark">
                     <a href="http://127.0.0.1:5500/index.html">
                         <figure>
-                            <img src="images/logo.png" class="img-fluid " alt="Responsive image">
+                            <img src="images/logo.png" alt="">
                         </figure>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -227,43 +260,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="types" style="margin-top: 72px;">
-                                                <span style="font-size: 18px; margin-left: 15px;">
-                                                    Wood type
-                                                </span>
-                                                <div class="two-forms">
-                                                    <div class="form">
-                                                        <input type="checkbox" id="type1" class="select-checkbox" name="type1" value="type1">
-                                                        <label class="types" for="type1">
-                                                            <figure>
-                                                                <img src="images/types.png" class="img-fluid "
-                                                                    alt="Responsive image">
-                                                            </figure>
-                                                            <h5>
-                                                                TYPE 1
-                                                            </h5>
-                                                            <span class="sublabel">
-                                                                Select
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="form">
-                                                        <input type="checkbox" id="type2" class="select-checkbox" name="type2" value="type2">
-                                                        <label class="types" for="type2">
-                                                            <figure>
-                                                                <img src="images/types.png" class="img-fluid "
-                                                                    alt="Responsive image">
-                                                            </figure>
-                                                            <h5>
-                                                                TYPE 2
-                                                            </h5>
-                                                            <span class="sublabel">
-                                                                Select
-                                                            </span>
-                                                        </label>
+                                            <div>
 
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -307,16 +305,9 @@
                                             <div class="form">
                                                 <label>
                                                     LOCATION
-
-                                                    <div class="tooltip">
-                                                        <figure class="icon">
-                                                            <img src="images/location-icon.svg" class="img-fluid "
-                                                                alt="Responsive image">
-                                                        </figure>
-                                                        <span class="tooltiptext">Extra fees may apply on long
-                                                            distance</span>
-                                                    </div>
-
+                                                    <figure class="icon">
+                                                        <img src="images/location-icon.svg" alt="">
+                                                    </figure>
                                                 </label>
                                                 <input type="text" class="input" placeholder="Please enter your pargola budget..">
                                             </div>
@@ -325,12 +316,9 @@
                                                     <span>
                                                         ARE YOU A USER
                                                     </span>
-                                                    <div class="note-account">
-                                                        <ul class="tabs">
-                                                            <li class="active" rel="tab1">Yes</li>
-                                                            <li rel="tab2">No</li>
-
-                                                        </ul>
+                                                    <ul class="tabs">
+                                                        <li class="active" rel="tab1">Yes</li>
+                                                        <li rel="tab2">No</li>
                                                         <div class="note">
                                                             <p>
                                                                 <span>
@@ -343,7 +331,7 @@
                                                                 </span> Create new password and repeat to confirm
                                                             </p>
                                                         </div>
-                                                    </div>
+                                                    </ul>
                                                     <div class="tab_container">
                                                         <h3 class="d_active tab_drawer_heading" rel="tab1">Yes</h3>
                                                         <div id="tab1" class="tab_content">
@@ -355,6 +343,7 @@
                                                                     <input type="text" class="input" placeholder="Enter your password">
                                                                 </div>
                                                             </div>
+                                                            <!-- #tab1 -->
                                                         </div>
                                                         <h3 class="tab_drawer_heading" rel="tab2">VISA</h3>
                                                         <div id="tab2" class="tab_content">
@@ -373,6 +362,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <!-- #tab2 -->
                                                     </div>
                                                 </div>
 
@@ -381,21 +371,12 @@
                                     </div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="buttons">
-                                        <div class="left">
-                                            <button class="btn blue-btn wizard-prev-btn" hidden>
-                                                back
-                                            </button>
-                                        </div>
-                                        <div class="right">
-                                            <button class="btn blue-btn wizard-next-btn">
-                                                Next
-                                                <span>
-                                                    ->
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <button class="btn blue-btn wizard-next-btn">
+                                        Next
+                                        <span>
+                                            ->
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                             <div id="second" class="wizard-tab">
@@ -418,7 +399,7 @@
                                                         <label class="container">
                                                             <figure>
                                                                 <img class="img-fluid" alt="Responsive image"
-                                                                    src="images/lighting1.png">
+                                                                    src="images/lighting1.png" alt="">
                                                             </figure>
                                                             <div class="content">
                                                                 <div>
@@ -429,19 +410,16 @@
                                                                         20EGP
                                                                     </span>
                                                                 </div>
-                                                                <button class="open_popup btn" data-toggle="modal"
-                                                                    data-target="description_popup">
-                                                                    <figure>
-                                                                        <img src="images/description-icon.svg"
-                                                                            class="img-fluid " alt="Responsive image">
-                                                                    </figure>
-                                                                </button>
                                                             </div>
                                                             <input type="checkbox" class="input">
                                                             <span class="checkmark"></span>
                                                         </label>
                                                     </div>
-
+                                                    <button class="open_popup btn" data-toggle="modal" data-target="description_popup">
+                                                        <figure>
+                                                            <img src="images/description-icon.svg" alt="">
+                                                        </figure>
+                                                    </button>
                                                 </div>
                                                 <div class="grid-item">
                                                     <div class="form-group">
@@ -459,25 +437,20 @@
                                                                         20EGP
                                                                     </span>
                                                                 </div>
-                                                                <button class="open_popup btn" data-toggle="modal"
-                                                                    data-target="description_popup">
-                                                                    <figure>
-                                                                        <img src="images/description-icon.svg"
-                                                                            class="img-fluid " alt="Responsive image">
-                                                                    </figure>
-                                                                </button>
-
                                                             </div>
                                                             <input type="checkbox" class="input">
                                                             <span class="checkmark"></span>
                                                         </label>
                                                     </div>
-
+                                                    <button class="open_popup btn" data-toggle="modal" data-target="description_popup">
+                                                        <figure>
+                                                            <img src="images/description-icon.svg" alt="">
+                                                        </figure>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div id="Side covers" class="tabcontent">
-
                                         </div>
                                         <div id="Ventilation" class="tabcontent">
                                         </div>
@@ -490,19 +463,15 @@
                                     </div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="left">
-                                        <button class="btn blue-btn wizard-prev-btn">
-                                            back
-                                        </button>
-                                    </div>
-                                    <div class="right">
-                                        <button class="btn blue-btn wizard-next-btn">
-                                            Next
-                                            <span>
-                                                ->
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <button class="btn blue-btn wizard-prev-btn">
+                                        back
+                                    </button>
+                                    <button class="btn blue-btn wizard-next-btn ">
+                                        Next
+                                        <span>
+                                            ->
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                             <div id="third" class="wizard-tab">
@@ -533,66 +502,64 @@
                                                         </div>
                                                     </div>
                                                     <div class="item-quantity">
-                                                        <div class="table-container">
-                                                            <table class="table table-bordered">
-                                                                <thead>
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="left">ITEM</th>
+                                                                    <th class="centered">QTY</th>
+                                                                    <th class="centered">UNIT PRICE</th>
+                                                                    <th class="centered">TOTAL</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="left">Pergola light</td>
+                                                                    <td class="centered">2</td>
+                                                                    <td class="centered">20 EGP</td>
+                                                                    <td class="centered">40 EGP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left">3 * 3 Pergola fine wood</td>
+                                                                    <td class="centered">1</td>
+                                                                    <td class="centered">600 EGP</td>
+                                                                    <td class="centered">600 EGP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left">Shipping cost</td>
+                                                                    <td class="centered">-</td>
+                                                                    <td class="centered">60EGP</td>
+                                                                    <td class="centered">60EGP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left">Installation fees</td>
+                                                                    <td class="centered">-</td>
+                                                                    <td class="centered">200EGP</td>
+                                                                    <td class="centered">200EGP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left"></td>
+                                                                    <td class="centered"></td>
+                                                                    <td class="centered"></td>
+                                                                    <td class="centered"></td>
+                                                                </tr>
+                                                                <tfoot>
                                                                     <tr>
-                                                                        <th class="left">ITEM</th>
-                                                                        <th class="centered">QTY</th>
-                                                                        <th class="centered">UNIT PRICE</th>
-                                                                        <th class="centered">TOTAL</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="left">Pergola light</td>
-                                                                        <td class="centered">2</td>
-                                                                        <td class="centered">20 EGP</td>
-                                                                        <td class="centered">40 EGP</td>
+                                                                        <td class="coloredtext left">Total price + 10% vat
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td class="centered">990EGP</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td class="left">3 * 3 Pergola fine wood</td>
-                                                                        <td class="centered">1</td>
-                                                                        <td class="centered">600 EGP</td>
-                                                                        <td class="centered">600 EGP</td>
+                                                                        <td class="coloredtext left">Initial payment ( 2 % )
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td class="centered">120EGP</td>
                                                                     </tr>
-                                                                    <tr>
-                                                                        <td class="left">Shipping cost</td>
-                                                                        <td class="centered">-</td>
-                                                                        <td class="centered">60EGP</td>
-                                                                        <td class="centered">60EGP</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="left">Installation fees</td>
-                                                                        <td class="centered">-</td>
-                                                                        <td class="centered">200EGP</td>
-                                                                        <td class="centered">200EGP</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="left"></td>
-                                                                        <td class="centered"></td>
-                                                                        <td class="centered"></td>
-                                                                        <td class="centered"></td>
-                                                                    </tr>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <td class="coloredtext left">Total price + 10% vat
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td class="centered">990EGP</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="coloredtext left">Initial payment ( 2 % )
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td class="centered">120EGP</td>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
+                                                                </tfoot>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                                 <div class="methods">
@@ -685,84 +652,72 @@
                                 </div>
                                 <div class="details">
                                     <div class="buttons">
-                                        <div class="left">
-                                            <button class="btn blue-btn wizard-prev-btn">
-                                                back
-                                            </button>
-                                        </div>
-                                        <div class="right">
-                                            <button class="btn blue-btn wizard-next-btn">
-                                                Next
-                                                <span>
-                                                    ->
-                                                </span>
-                                            </button>
-                                        </div>
+                                        <button class="btn blue-btn wizard-prev-btn">
+                                            back
+                                        </button>
+                                        <button class="btn blue-btn wizard-next-btn ">
+                                            Next
+                                            <span>
+                                                ->
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div id="fourth" class="wizard-tab">
                                 <div class="details">
-                                    <div class="delivery-date">
-                                        <div class="date ">
-                                            <div class="form-title" style="margin-bottom:30px">
-                                                <h5>
-                                                    Select Date
-                                                </h5>
-                                                <span>
-                                                    Optional
-                                                </span>
+                                    <div class="date">
+                                        <div class="forms" style="display: flex;">
+                                            <div class="form">
+                                                <label>
+                                                    Day
+                                                </label>
+                                                <select class="dropdown">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>1</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>6</option>
+                                                </select>
                                             </div>
-                                            <div class="forms">
-                                                <div class="form">
-                                                    <select class="dropdown">
-                                                        <option>Day</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>1</option>
-                                                        <option>5</option>
-                                                        <option>1</option>
-                                                        <option>6</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form">
-                                                    <select class="dropdown">
-                                                        <option>Month</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>1</option>
-                                                        <option>5</option>
-                                                        <option>1</option>
-                                                        <option>6</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form">
-
-                                                    <select class="dropdown">
-                                                        <option>Year</option>
-
-                                                        <option>2014</option>
-                                                        <option>2015</option>
-                                                        <option>2016</option>
-                                                        <option>2017</option>
-                                                        <option>2018</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
+                                            <div class="form">
+                                                <label>
+                                                    Month
+                                                </label>
+                                                <select class="dropdown">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>1</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="form">
+                                                <label>
+                                                    Year
+                                                </label>
+                                                <select class="dropdown">
+                                                    <option>2014</option>
+                                                    <option>2015</option>
+                                                    <option>2016</option>
+                                                    <option>2017</option>
+                                                    <option>2018</option>
+                                                    <option>2019</option>
+                                                    <option>2020</option>
+                                                    <option>2021</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="preferred-days">
-                                            <div class="form-title">
-                                                <h5>
-                                                    PREFERRED DAYS
-                                                </h5>
-                                            </div>
+                                            <h5>
+                                                PREFERRED DAYS
+                                            </h5>
                                             <div class="days">
                                                 <div>
                                                     <input type="checkbox" id="day1" name="day1" class="input">
@@ -795,11 +750,9 @@
                                             </div>
                                         </div>
                                         <div class="suitable-hours">
-                                            <div class="form-title">
-                                                <h5>
-                                                    SUITABLE HOURS
-                                                </h5>
-                                            </div>
+                                            <h5>
+                                                SUITABLE HOURS
+                                            </h5>
                                             <div class="hours">
                                                 <div>
                                                     <input type="checkbox" id="duration1" name="duration1" class="input">
@@ -834,88 +787,29 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="buttons">
-                                    <div class="left">
-                                        <button class="btn blue-btn wizard-prev-btn">
-                                            back
-                                        </button>
-                                    </div>
-                                    <div class="right">
-                                        <button class="btn outline-btn wizard-next-btn">
-                                            Skip
-                                        </button>
-                                        <button class="btn blue-btn wizard-next-btn">
-                                            Confirm and continue
-                                            <span>
-                                                ->
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <button class="btn blue-btn wizard-prev-btn">
+                                    back
+                                </button>
+                                    <button class="btn outline-btn wizard-skip-btn">
+                                    Skip
+                                </button>
+                                    <button class="btn blue-btn wizard-next-btn" style="width: 377px;">
+                                    Confirm and continue
+                                    <span>
+                                        ->
+                                    </span>
+                                </button>
                                 </div>
                             </div>
                             <div id="fifth" class="wizard-tab">
                                 <div class="details">
-                                    <div class="order-preview">
-                                        <figure>
-                                            <img src="images/img1.png" style="width: 802px;height: auto;" class="img-fluid " alt="Responsive image">
-                                        </figure>
-                                        <div class="grid-container ">
-                                            <div class="grid-item">
-                                                <figure>
-                                                    <img src="images/img3.png" class="img-fluid " alt="Responsive image">
-                                                </figure>
-                                            </div>
-                                            <div class="grid-item">
-                                                <figure>
-                                                    <img src="images/img2.png" class="img-fluid " alt="Responsive image">
-                                                </figure>
-                                            </div>
-                                            <div class="grid-item ">
-                                                <figure>
-                                                    <img src="images/img3.png" class="img-fluid " alt="Responsive image">
-                                                </figure>
-                                            </div>
-                                            <div class="grid-item ">
-                                                <figure>
-                                                    <img src="images/img2.png" class="img-fluid " alt="Responsive image">
-                                                </figure>
-                                            </div>
-                                            <div class="grid-item ">
-                                                <figure>
-                                                    <img src="images/img3.png" class="img-fluid " alt="Responsive image">
-                                                </figure>
-                                            </div>
-
-                                        </div>
-                                        <div class="order-details ">
-                                            <div>
-                                                <span>
-                                                    Order number
-                                                </span>
-                                                <p>
-                                                    TGd332323
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <span>
-                                                    Total cost
-                                                </span>
-                                                <p>
-                                                    23900 EGP
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="buttons">
-                                    <div class="left">
+                                    <div class="buttons">
                                         <button class="btn blue-btn wizard-prev-btn">
                                             back
                                         </button>
-                                    </div>
-                                    <div class="right">
-                                        <button class="open_popup btn red-btn wizard-reject-btn" data-toggle="modal" data-target="reject_popup">
+                                        <button class="btn red-btn wizard-prev-btn">
                                             Reject
                                         </button>
                                         <button class="btn blue-btn wizard-next-btn">
@@ -927,46 +821,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="sixth " class="wizard-tab ">
-                                <div class="details ">
-                                    <div class="terms ">
-                                        <div class="paragraph ">
-                                            <h3>
-                                                Terms and Conditions
-                                            </h3>
-                                            <p>
-                                                Welcome to Website Name!
-                                            </p>
-                                            <p>
-                                                These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.
-                                            </p>
-                                            <p>
-                                                By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page.
-                                            </p>
-                                            <p>
-                                                The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions.
-                                                “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of
-                                                payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated
-                                                services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable
-                                                and therefore as referring to same.
-                                            </p>
-                                            <h4>
-                                                Cookies
-                                            </h4>
-                                            <p>
-                                                We employ the use of cookies. By accessing Website Name, you agreed to use cookies in agreement with the Company Name's Privacy Policy. Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our
-                                                website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="buttons">
-                                    <div class="left">
+                            <div id="sixth" class="wizard-tab">
+                                <div class="details">
+                                    <div class="buttons">
                                         <button class="btn blue-btn wizard-prev-btn">
                                             back
                                         </button>
-                                    </div>
-                                    <div class="right">
                                         <button class="btn blue-btn wizard-next-btn">
                                             Accept
                                             <span>
@@ -978,479 +838,170 @@
                             </div>
                             <div id="seventh" class="wizard-tab">
                                 <div class="details">
-                                    <div class="checkout">
-                                        <div class="container">
-                                            <div class="details">
-                                                <div class="order-details">
-                                                    <h4>
-                                                        DETAILS
-                                                    </h4>
-                                                    <div class="total-cost">
-                                                        <div class="cost">
-                                                            <span>
-                                                                Total Cost
-                                                            </span>
-                                                            <p>
-                                                                990EGP
-                                                            </p>
-                                                        </div>
-                                                        <div class="order-number">
-                                                            <span>
-                                                                Order number
-                                                            </span>
-                                                            <p>
-                                                                TGd332323
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-quantity">
-                                                        <div class="table-container">
-                                                            <table class="table table-bordered">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th class="left">ITEM</th>
-                                                                        <th class="centered">QTY</th>
-                                                                        <th class="centered">UNIT PRICE</th>
-                                                                        <th class="centered">TOTAL</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="left">Pergola light</td>
-                                                                        <td class="centered">2</td>
-                                                                        <td class="centered">20 EGP</td>
-                                                                        <td class="centered">40 EGP</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="left">3 * 3 Pergola fine wood</td>
-                                                                        <td class="centered">1</td>
-                                                                        <td class="centered">600 EGP</td>
-                                                                        <td class="centered">600 EGP</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="left">Shipping cost</td>
-                                                                        <td class="centered">-</td>
-                                                                        <td class="centered">60EGP</td>
-                                                                        <td class="centered">60EGP</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="left">Installation fees</td>
-                                                                        <td class="centered">-</td>
-                                                                        <td class="centered">200EGP</td>
-                                                                        <td class="centered">200EGP</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="left"></td>
-                                                                        <td class="centered"></td>
-                                                                        <td class="centered"></td>
-                                                                        <td class="centered"></td>
-                                                                    </tr>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <td class="coloredtext left">Total price + 10% vat
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td class="centered">990EGP</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="coloredtext left">Initial payment ( 2 % )
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td class="centered">120EGP</td>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="methods">
-                                                    <h4>
-                                                        PAYMENT METHOD
-                                                    </h4>
-                                                    <ul class="payment-tabs2">
-                                                        <li class="active" rel="tab5">MASTERCARD</li>
-                                                        <li rel="tab6">VISA</li>
-                                                    </ul>
-                                                    <div class="tab_container2">
-                                                        <h3 class="d_active tab_drawer_heading" rel="tab5">MASTERCARD
-                                                        </h3>
-                                                        <div id="tab5" class="payment_content2">
-                                                            <div class="fields">
-                                                                <div class="field">
-                                                                    <label>
-                                                                        CARD HOLDER NAME
-                                                                    </label>
-                                                                    <input type="text" class="input" placeholder="Name on card">
-                                                                </div>
-                                                                <div class="field">
-                                                                    <label>
-                                                                        CARD NAME
-                                                                    </label>
-                                                                    <input type="number" class="input" placeholder="Enter 16 number on the card">
-                                                                </div>
-                                                                <div class="field card-info">
-                                                                    <div class="card">
-                                                                        <div class="form-group">
-                                                                            <label>
-                                                                                Expiry DATE
-                                                                            </label>
-                                                                            <select class="form-control dropdown" id="exampleFormControlSelect1">
-                                                                                <option>Month</option>
-                                                                                <option>1</option>
-                                                                                <option>2</option>
-                                                                                <option>3</option>
-                                                                                <option>4</option>
-                                                                                <option>5</option>
-                                                                                <option>6</option>
-                                                                                <option>7</option>
-                                                                                <option>8</option>
-                                                                                <option>9</option>
-                                                                                <option>10</option>
-                                                                                <option>11</option>
-                                                                                <option>12</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <select class="form-control dropdown">
-                                                                                <option>Year</option>
-                                                                                <option>2010</option>
-                                                                                <option>2011</option>
-                                                                                <option>2012</option>
-                                                                                <option>2013</option>
-                                                                                <option>2014</option>
-                                                                                <option>2015</option>
-                                                                                <option>2016</option>
-                                                                                <option>2017</option>
-                                                                                <option>2018</option>
-                                                                                <option>2019</option>
-                                                                                <option>2020</option>
-                                                                                <option>2021</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="cv-card">
-                                                                        <div class="form-group">
-                                                                            <label for="exampleFormControlInput1">CVV</label>
-                                                                            <input type="email" class="form-control input" id="exampleFormControlInput1" placeholder="3 numbers">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <a href="http://127.0.0.1:5500/profile.html" class="btn blue-btn confirm">
-                                                                CONFIRM PAYMENT
-                                                            </a>
-
-                                                        </div>
-                                                        <h3 class="tab_drawer_heading" rel="tab6">VISA</h3>
-                                                        <div id="tab6" class="payment_content2">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details">
                                     <div class="buttons">
-                                        <div class="left">
-                                            <button class="btn blue-btn wizard-prev-btn">
-                                                back
-                                            </button>
-                                        </div>
-                                        <div class="right">
-                                            <button class="btn blue-btn wizard-next-btn">
-                                                Next
-                                                <span>
-                                                    ->
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="eighth" class="wizard-tab">
-                                <div class="details">
-                                    <figure>
-                                        <img src="images/img1.png" class="img-fluid " alt="Responsive image">
-                                    </figure>
-                                    <div class="order-title ">
-                                        <h3>
-                                            Order complete
-                                        </h3>
-                                        <h4>
-                                            Thanks for choosing umbra
-                                        </h4>
-                                        <p>
-                                            Pergola will be ready soon and we will deliver it after contacting you
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popup " id="description_popup ">
-                        <div class="popup_main ">
-                            <div class="popup_body ">
-                                <div class="popup_back "></div>
-                                <div class="popup_contain ">
-                                    <figure>
-                                        <img src="images/description-popup.png " class="img-fluid " alt="Responsive image">
-                                    </figure>
-                                    <div class="popup-content ">
-                                        <div class="images ">
-                                            <figure>
-                                                <img src="images/Pergola corners_raised bed corners _ Etsy.png " class="img-fluid " alt="Responsive image">
-                                            </figure>
-                                            <figure>
-                                                <img src="images/Quad bracket for 4x4 pergola _ Etsy.png " class="img-fluid " alt="Responsive image">
-                                            </figure>
-                                        </div>
-                                        <div class="content ">
-                                            <h3>
-                                                DESCRIPTION
-                                            </h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at facilisis nibh. Vestibulum blandit, tellus quis maximus tempor, tortor dolor iaculis tortor, ac porttitor velit massa id nibh. Integer finibus orci et vehicula maximus. In lacinia ac mi eget
-                                                auctor. Donec eu ex sed nulla tincidunt volutpat nec bibendum arcu.
-                                            </p>
-                                        </div>
-
-                                        <div class="buttons ">
-                                            <div class="popup_close btn blue-btn cart-btn " data-modal-dismiss>
-                                                <figure>
-                                                    <img src="images/plus.svg" class="img-fluid " alt="Responsive image">
-                                                </figure>
-                                                Add to cart
-                                            </div>
-                                            <div class="popup_close btn red-btn " data-modal-dismiss>
-                                                X</div>
-                                        </div>
+                                        <button class="btn blue-btn wizard-prev-btn">
+                                            back
+                                        </button>
+                                        <button class="btn blue-btn wizard-next-btn">
+                                            Pay and finish order
+                                            <span>
+                                                ->
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="popup" id="description_popup">
+                    <div class="popup_main">
+                        <div class="popup_body ">
+                            <div class="popup_back"></div>
+                            <div class="popup_contain">
+                                <figure>
+                                    <img src="images/description-popup.png" class="img-fluid" alt="Responsive image">
+                                </figure>
+                                <div class="popup-content">
+                                    <div class="images">
+                                        <figure>
+                                            <img src="images/Pergola corners_raised bed corners _ Etsy.png" alt="">
+                                        </figure>
+                                        <figure>
+                                            <img src="images/Quad bracket for 4x4 pergola _ Etsy.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            DESCRIPTION
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at facilisis nibh. Vestibulum blandit, tellus quis maximus tempor, tortor dolor iaculis tortor, ac porttitor velit massa id nibh. Integer finibus orci et vehicula maximus. In lacinia ac mi eget
+                                            auctor. Donec eu ex sed nulla tincidunt volutpat nec bibendum arcu.
+                                        </p>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <div class="popup_close btn blue-btn cart-btn" data-modal-dismiss>
+                                            <figure>
+                                                <img src="images/plus.svg" alt="">
+                                            </figure>
+                                            Add to cart
+                                        </div>
+                                        <div class="popup_close btn red-btn" data-modal-dismiss>
+                                            X</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
-            <div class="container ">
-                <div class="row ">
-                    <div class="col ">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
                         <h4>Umbra</h4>
                         <ul>
                             <li>
-                                <a href="# ">3x4 Standard umbra</a>
+                                <a href="#">3x4 Standard umbra</a>
                             </li>
                             <li>
-                                <a href="# ">4x4 Standard umbra</a>
+                                <a href="#">4x4 Standard umbra</a>
                             </li>
                             <li>
-                                <a href="# ">Custom umbra</a>
+                                <a href="#">Custom umbra</a>
                             </li>
                             <li>
-                                <a href="# ">Accessories</a>
+                                <a href="#">Accessories</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col ">
+                    <div class="col">
                         <h4>Legal</h4>
                         <ul>
                             <li>
-                                <a href="# ">Privacy policy</a>
+                                <a href="#">Privacy policy</a>
                             </li>
                             <li>
-                                <a href="# ">Terms & services</a>
+                                <a href="#">Terms & services</a>
                             </li>
                             <li>
-                                <a href="# ">Delivery policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col ">
-                        <h4>Contact us</h4>
-                        <ul>
-                            <li>
-                                <a href="# ">Support@umbra.com</a>
-                            </li>
-                            <li>
-                                <a href="# ">+020124548415</a>
-                            </li>
-                            <li>
-                                <a href="# ">Call me back</a>
+                                <a href="#">Delivery policy</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col social ">
+                    <div class="col">
                         <h4>Contact us</h4>
                         <ul>
                             <li>
-                                <a href="# ">
+                                <a href="#">Support@umbra.com</a>
+                            </li>
+                            <li>
+                                <a href="#">+020124548415</a>
+                            </li>
+                            <li>
+                                <a href="#">Call me back</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col social">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
                                     <figure>
-                                        <img src="images/instagram.svg" class="img-fluid " alt="Responsive image">
+                                        <img src="images/instagram.svg" alt="">
                                     </figure>
                                 </a>
                             </li>
                             <li>
-                                <a href="# ">
+                                <a href="#">
                                     <figure>
-                                        <img src="images/facebook.svg" class="img-fluid " alt="Responsive image">
+                                        <img src="images/facebook.svg" alt="">
                                     </figure>
                                 </a>
                             </li>
                             <li>
-                                <a href="# ">
+                                <a href="#">
                                     <figure>
-                                        <img src="images/Twitter_Logo_Blue.svg" class="img-fluid " alt="Responsive image">
+                                        <img src="images/Twitter_Logo_Blue.svg" alt="">
                                     </figure>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="copyright ">
+                <div class="copyright">
                     <span>
                         Copyright @ 2020, Transglobal Eg
                     </span>
                 </div>
             </div>
         </footer>
-        </div>
-        <!-- Reject Popup -->
-        <div class="popup" id="reject_popup">
-            <div class="popup_main">
-                <div class="popup_body">
-                    <div class="popup_back"></div>
-                    <div class="popup_contain">
-                        <div class="popup-content">
-                            <div class="content ">
-                                <div class="field ">
-                                    <label>
-                                    WHAT IS THE PROBLEM?
-                                </label>
-                                    <input class="input " type="text " placeholder="What can be better! ">
-                                </div>
-                                <div class="field ">
-                                    <label>
-                                    OTHER SUGGESTIONS?
-                                </label>
-                                    <input class="input " type="text " placeholder="What can be better! ">
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="popup_close btn blue-btn" data-modal-dismiss>
-                                    Send feedback
-                                </div>
-                                <span>
-                                you can call us any time
-                            </span>
-                                <div class="popup_close btn red-btn" data-modal-dismiss>
-                                    X
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup" id="callme1_popup">
-            <div class="popup_main">
-                <div class="popup_body ">
-                    <div class="popup_back"></div>
-                    <div class="popup_contain">
-                        <figure>
-                            <img src="images/callme-popup.png" class="img-fluid " alt="Responsive image">
-                        </figure>
-                        <div class="popup-content">
-                            <div class="fields">
-                                <div class="field">
-                                    <label>
-                                    NAME
-                                </label>
-                                    <input type="text" class="input" placeholder="Full name">
-                                </div>
-                                <div class="field">
-                                    <label>
-                                    PHONE NUMBER
-                                </label>
-                                    <input type="number" class="input" placeholder="+02Phone">
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="popup_close btn blue-btn" data-modal-dismiss>Call me</div>
-                                <div class="popup_close btn red-btn" data-modal-dismiss>X</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup" id="description_popup">
-            <div class="popup_main">
-                <div class="popup_body ">
-                    <div class="popup_back"></div>
-                    <div class="popup_contain">
-                        <figure>
-                            <img src="images/description-popup.png" class="img-fluid" alt="Responsive image">
-                        </figure>
-                        <div class="popup-content">
-                            <div class="images">
-                                <figure>
-                                    <img src="images/Pergola corners_raised bed corners _ Etsy.png" alt="">
-                                </figure>
-                                <figure>
-                                    <img src="images/Quad bracket for 4x4 pergola _ Etsy.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    DESCRIPTION
-                                </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at facilisis nibh. Vestibulum blandit, tellus quis maximus tempor, tortor dolor iaculis tortor, ac porttitor velit massa id nibh. Integer finibus orci et vehicula maximus. In lacinia ac mi eget
-                                    auctor. Donec eu ex sed nulla tincidunt volutpat nec bibendum arcu.
-                                </p>
-                            </div>
-
-                            <div class="buttons">
-                                <div class="popup_close btn blue-btn cart-btn" data-modal-dismiss>
-                                    <figure>
-                                        <img src="images/plus.svg" alt="">
-                                    </figure>
-                                    Add to cart
-                                </div>
-                                <div class="popup_close btn red-btn" data-modal-dismiss>
-                                    X</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
-        <script src="js/customScript.js "></script>
-        <script>
-            function openType(evt, typeName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent ");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none ";
-                }
-                tablinks = document.getElementsByClassName("tablinks ");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active ", " ");
-                }
-                document.getElementById(typeName).style.display = "block ";
-                evt.currentTarget.className += " active ";
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/customScript.js"></script>
+    <script>
+        function openType(evt, typeName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(typeName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-            // Get the element with id="defaultOpen " and click on it
-            document.getElementById("defaultOpen ").click();
-        </script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>
