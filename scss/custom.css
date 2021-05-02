@@ -2444,6 +2444,9 @@ main .order-request .card-body .wizard-tab .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .order-request .card-body .wizard-tab .details h4 {
@@ -2471,6 +2474,11 @@ main .order-request .card-body .wizard-tab .details .forms .form {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin: 0 10px;
+}
+
+main .order-request .card-body .wizard-tab .details .forms .form:first-child {
+  margin-left: 0;
 }
 
 main .order-request .card-body .wizard-tab .details .forms .form .input {
@@ -2753,7 +2761,7 @@ main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .
 
 main .order-request .card-body .wizard-tab .details .vertical-tabs .tabcontent .grid-container .grid-item .btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 6px;
   left: 130px;
 }
 
@@ -2914,6 +2922,112 @@ main .order-request .card-body .wizard-tab .details .hint p {
   margin-bottom: 15px;
 }
 
+main .order-request .card-body .wizard-tab .details .order-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 0 30px;
+  grid-gap: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .grid-container .grid-item {
+  position: relative;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .grid-container figure img {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .grid-container figure img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .order-details {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px 23px;
+  margin-bottom: 30px;
+  width: 378px;
+  height: 220px;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .order-details > div {
+  margin-bottom: 40px;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .order-details p {
+  font-size: 30px;
+  color: #000000;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .order-details span {
+  color: #a4a4a4;
+  font-size: 20px;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .order-details .cost {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .order-request .card-body .wizard-tab .details .order-preview .order-details .order-number {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .order-request .card-body .wizard-tab .details .terms .paragraph {
+  border: 1px solid #27B5F3;
+  border-radius: 10px;
+  width: 100%;
+  height: 469px;
+  padding: 50px 50px 15px;
+  overflow-y: scroll;
+  line-height: 22px;
+}
+
+main .order-request .card-body .wizard-tab .details .terms .paragraph p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+
+main .order-request .card-body .wizard-tab .details .terms .paragraph h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main .order-request .card-body .wizard-tab .details .terms .paragraph h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main .order-request .card-body .wizard-tab .details .order-title {
+  margin: 0 25px;
+}
+
+main .order-request .card-body .wizard-tab .details .order-title h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+main .order-request .card-body .wizard-tab .details .order-title p {
+  font-size: 18px;
+}
+
 main .order-request .card-body .wizard-tab .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2946,6 +3060,17 @@ main .order-request .card-body .wizard-tab .buttons .wizard-skip-btn {
 
 main .order-request .card-body .wizard-tab .buttons span {
   margin-left: 10px;
+}
+
+main .order-request .card-body .wizard-tab .buttons .right {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .order-request .card-body .wizard-tab .buttons .right .red-btn {
+  margin-right: 15px;
 }
 
 .select-dropdown-container .dropdown-trigger {
