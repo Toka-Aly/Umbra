@@ -13,294 +13,300 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <div class="container nav justify-content-center">
-            <div class="language">
-                <select class="dropdown form-select">
+
+    <div class="loading-circle">
+        <img src="images/loading.svg" alt="">
+    </div>
+    <div class="global-wrapping">
+        <div class="topbar">
+            <div class="container nav justify-content-center">
+                <div class="language">
+                    <select class="dropdown form-select">
                     <option selected>Language</option>
                     <option value="1">En</option>
                     <option value="2">Ar</option>
                 </select>
-            </div>
-            <div class="right-nav nav justify-content-center">
-                <div class="nav-item">
-                    <button class="open_popup btn" data-toggle="modal" data-target="callme1_popup">Call me back</button>
                 </div>
-                <div class="popup" id="callme1_popup">
-                    <div class="popup_main">
-                        <div class="popup_body ">
-                            <div class="popup_back"></div>
-                            <div class="popup_contain">
-                                <figure>
-                                    <img src="images/callme-popup.png" alt="">
-                                </figure>
-                                <div class="popup-content">
-                                    <div class="fields">
-                                        <div class="field">
-                                            <label>
+                <div class="right-nav nav justify-content-center">
+                    <div class="nav-item">
+                        <button class="open_popup btn" data-toggle="modal" data-target="callme1_popup">Call me back</button>
+                    </div>
+                    <div class="popup" id="callme1_popup">
+                        <div class="popup_main">
+                            <div class="popup_body ">
+                                <div class="popup_back"></div>
+                                <div class="popup_contain">
+                                    <figure>
+                                        <img src="images/callme-popup.png" alt="">
+                                    </figure>
+                                    <div class="popup-content">
+                                        <div class="fields">
+                                            <div class="field">
+                                                <label>
                                                 NAME
                                             </label>
-                                            <input type="text" class="input" placeholder="Full name">
-                                        </div>
-                                        <div class="field">
-                                            <label>
+                                                <input type="text" class="input" placeholder="Full name">
+                                            </div>
+                                            <div class="field">
+                                                <label>
                                                 PHONE NUMBER
                                             </label>
-                                            <input type="number" class="input" placeholder="+02Phone">
+                                                <input type="number" class="input" placeholder="+02Phone">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="buttons">
-                                        <div class="popup_close btn blue-btn" data-modal-dismiss>Call me</div>
-                                        <div class="popup_close btn red-btn" data-modal-dismiss>X</div>
+                                        <div class="buttons">
+                                            <div class="popup_close btn blue-btn" data-modal-dismiss>Call me</div>
+                                            <div class="popup_close btn red-btn" data-modal-dismiss>X</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="nav-item">
-                    <a href="http://127.0.0.1:5503/sign-in.html">
+                    <div class="nav-item">
+                        <a href="http://127.0.0.1:5503/sign-in.html">
                         Sign in / Register
                     </a>
-                </div>
-                <div class="nav-item menu-area cart">
-                    <a href="http://127.0.0.1:5503/shopping-cart.html">
-                        <figure>
-                            <img src="images/add-to-cart.svg" alt="">
-                        </figure>
-                        <span class="count">10</span> cart
-                    </a>
+                    </div>
+                    <div class="nav-item menu-area cart">
+                        <a href="http://127.0.0.1:5503/shopping-cart.html">
+                            <figure>
+                                <img src="images/add-to-cart.svg" alt="">
+                            </figure>
+                            <span class="count">10</span> cart
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md  navbar-dark">
-                <a href="http://127.0.0.1:5503/index.html">
-                    <figure>
-                        <img src="images/logo.png" alt="">
-                    </figure>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md  navbar-dark">
+                    <a href="http://127.0.0.1:5503/index.html">
+                        <figure>
+                            <img src="images/logo.png" alt="">
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5503/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5503/about-us.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5503/shop.html">Shop</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="profile">
-            <div class="container">
-                <div class="title-section">
-                    <div class="title">
-                        <h2>
-                            PROFILE
-                        </h2>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://127.0.0.1:5503/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://127.0.0.1:5503/about-us.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://127.0.0.1:5503/shop.html">Shop</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="details">
-                    <div class="account-info">
-                        <h4>
-                            PERSONAL INFORMATION
-                        </h4>
-                        <div class="changeable ">
-                            <div class="fileUpload">
-                                <h5>
-                                    Profie Image
-                                </h5>
-                                <input type="file" class="upload" />
-                                <button class="btn outline-btn">
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="profile">
+                <div class="container">
+                    <div class="title-section">
+                        <div class="title">
+                            <h2>
+                                PROFILE
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="account-info">
+                            <h4>
+                                PERSONAL INFORMATION
+                            </h4>
+                            <div class="changeable ">
+                                <div class="fileUpload">
+                                    <h5>
+                                        Profie Image
+                                    </h5>
+                                    <input type="file" class="upload" />
+                                    <button class="btn outline-btn">
                                     <figure>
                                         <img src="images/profile-p.png" alt="">
                                     </figure>
                                     <span>Edit</span>
                                 </button>
-                            </div>
-                            <div class="reset">
-                                <h5>
-                                    PASSWORD
-                                </h5>
-                                <a href="http://127.0.0.1:5503/reset.html" class="btn reset-btn blue-btn">
+                                </div>
+                                <div class="reset">
+                                    <h5>
+                                        PASSWORD
+                                    </h5>
+                                    <a href="http://127.0.0.1:5503/reset.html" class="btn reset-btn blue-btn">
                                     Change the Password
                                 </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="fields">
-                            <div class="two-fields">
-                                <div class="field">
-                                    <label for="">
+                            <div class="fields">
+                                <div class="two-fields">
+                                    <div class="field">
+                                        <label for="">
                                         FIRST NAME
                                     </label>
-                                    <input class="input input-custom " type="text" value="Mohamed Gharib" readonly>
+                                        <input class="input input-custom " type="text" value="Mohamed Gharib" readonly>
+                                    </div>
+                                    <div class="field">
+                                        <label for="">
+                                        LAST NAME
+                                    </label>
+                                        <input class="input input-custom " type="text" value="Mohamed Gharib" readonly>
+                                    </div>
                                 </div>
                                 <div class="field">
                                     <label for="">
-                                        LAST NAME
-                                    </label>
-                                    <input class="input input-custom " type="text" value="Mohamed Gharib" readonly>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label for="">
                                     EMAIL ADDRESS
                                 </label>
-                                <input class="input" type="text" placeholder="Your email@">
-                            </div>
-                            <div class="field">
-                                <label for="">
+                                    <input class="input" type="text" placeholder="Your email@">
+                                </div>
+                                <div class="field">
+                                    <label for="">
                                     PHONE NUMBER
                                 </label>
-                                <input class="input" type="number" placeholder="01**********">
-                            </div>
-                            <div class="field address">
-                                <label>
+                                    <input class="input" type="number" placeholder="01**********">
+                                </div>
+                                <div class="field address">
+                                    <label>
                                     LOCATION
                                 </label>
-                                <input class="input input-custom " name="text" placeholder="22 Nasr city, Cairo, Egypt">
-                                <button class="btn outline-btn">
+                                    <input class="input input-custom " name="text" placeholder="22 Nasr city, Cairo, Egypt">
+                                    <button class="btn outline-btn">
                                     Edit
                                 </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="order">
-                        <h4>
-                            ACTIVE ORDERS
-                        </h4>
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <figure>
-                                    <img src="images/activeorder1.png" alt="">
-                                </figure>
-                                <div class="item-info">
-                                    <p>
-                                        3x4 STANDARD UMBRA
-                                    </p>
-                                    <span>
+                        <div class="order">
+                            <h4>
+                                ACTIVE ORDERS
+                            </h4>
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <figure>
+                                        <img src="images/activeorder1.png" alt="">
+                                    </figure>
+                                    <div class="item-info">
+                                        <p>
+                                            3x4 STANDARD UMBRA
+                                        </p>
+                                        <span>
                                         Sep 20, 2020
                                     </span>
-                                    <button class="btn outline-btn">
+                                        <button class="btn outline-btn">
                                         Order details
                                     </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="grid-item">
-                                <figure>
-                                    <img src="images/activeorder2.png" alt="">
-                                </figure>
-                                <div class="item-info">
-                                    <p>
-                                        CUSTOM UMBRA
-                                    </p>
-                                    <span>
+                                <div class="grid-item">
+                                    <figure>
+                                        <img src="images/activeorder2.png" alt="">
+                                    </figure>
+                                    <div class="item-info">
+                                        <p>
+                                            CUSTOM UMBRA
+                                        </p>
+                                        <span>
                                         Sep 20, 2020
                                     </span>
-                                    <button class="btn outline-btn check">
+                                        <button class="btn outline-btn check">
                                         Check progress
                                     </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h4>Umbra</h4>
-                    <ul>
-                        <li>
-                            <a href="#">3x4 Standard umbra</a>
-                        </li>
-                        <li>
-                            <a href="#">4x4 Standard umbra</a>
-                        </li>
-                        <li>
-                            <a href="#">Custom umbra</a>
-                        </li>
-                        <li>
-                            <a href="#">Accessories</a>
-                        </li>
-                    </ul>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Umbra</h4>
+                        <ul>
+                            <li>
+                                <a href="#">3x4 Standard umbra</a>
+                            </li>
+                            <li>
+                                <a href="#">4x4 Standard umbra</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom umbra</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & services</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Support@umbra.com</a>
+                            </li>
+                            <li>
+                                <a href="#">+020124548415</a>
+                            </li>
+                            <li>
+                                <a href="#">Call me back</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col social">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/instagram.svg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/facebook.svg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/Twitter_Logo_Blue.svg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Privacy policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & services</a>
-                        </li>
-                        <li>
-                            <a href="#">Delivery policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>Contact us</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Support@umbra.com</a>
-                        </li>
-                        <li>
-                            <a href="#">+020124548415</a>
-                        </li>
-                        <li>
-                            <a href="#">Call me back</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col social">
-                    <h4>Contact us</h4>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="images/instagram.svg" alt="">
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="images/facebook.svg" alt="">
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="images/Twitter_Logo_Blue.svg" alt="">
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <span>
+                <div class="copyright">
+                    <span>
                     Copyright @ 2020, Transglobal Eg
                 </span>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/customScript.js"></script>

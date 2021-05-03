@@ -10,7 +10,43 @@ body {
     padding-top: 174px;
 }
 
-.global-wrap {
+loading-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+}
+
+.loading-circle img {
+    -webkit-animation: fading 1s infinite alternate;
+    animation: fading 1s infinite alternate;
+}
+
+@-webkit-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.global-wrapping {
     display: flex;
     flex-direction: column;
 }

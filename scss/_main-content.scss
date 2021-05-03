@@ -631,6 +631,9 @@ main {
                         color: $primaryColor;
                         border-radius: 10px;
                     }
+                    &:hover {
+                        color: $primaryColor;
+                    }
                 }
             }
             .tabcontent {
@@ -660,10 +663,17 @@ main {
                                 height: 33px;
                             }
                             .cart-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 border-radius: 50%;
                                 width: 45px;
                                 height: 45px;
                                 margin-left: 15px;
+                                &:hover {
+                                    background: #27B5F3;
+                                    color: white;
+                                }
                                 .count {
                                     top: 0;
                                     left: 0;
@@ -1377,6 +1387,10 @@ main {
                                 width: 45px;
                                 height: 45px;
                                 margin-left: 15px;
+                                &:hover {
+                                    background: #27B5F3;
+                                    color: white;
+                                }
                                 .count {
                                     top: 0;
                                     left: 0;
@@ -1497,7 +1511,6 @@ main {
             .wizard-tab {
                 .details {
                     display: flex;
-                    align-items: center;
                     h4 {
                         font-weight: 700;
                         font-size: 24px;

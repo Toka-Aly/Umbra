@@ -11,6 +11,8 @@
           flex: 1;
   position: relative;
   z-index: 0;
+  display: -ms-grid;
+  display: grid;
 }
 
 .banner .banner-body {
@@ -41,7 +43,43 @@ body {
   padding-top: 174px;
 }
 
-.global-wrap {
+loading-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.loading-circle img {
+  -webkit-animation: fading 1s infinite alternate;
+  animation: fading 1s infinite alternate;
+}
+
+@-webkit-keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.global-wrapping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,8 +437,8 @@ header {
 }
 
 .outline-btn:hover {
-  color: white;
   background: #28B6F6;
+  color: white;
   border: 1px solid transparent;
 }
 
@@ -1302,6 +1340,10 @@ main .accessories .vertical-tabs .tab button.active {
   border-radius: 10px;
 }
 
+main .accessories .vertical-tabs .tab button:hover {
+  color: #28B6F6;
+}
+
 main .accessories .vertical-tabs .tabcontent .grid-container {
   display: -ms-grid;
   display: grid;
@@ -1349,10 +1391,24 @@ main .accessories .vertical-tabs .tabcontent .grid-container .details .buttons .
 }
 
 main .accessories .vertical-tabs .tabcontent .grid-container .details .buttons .cart-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   width: 45px;
   height: 45px;
   margin-left: 15px;
+}
+
+main .accessories .vertical-tabs .tabcontent .grid-container .details .buttons .cart-btn:hover {
+  background: #27B5F3;
+  color: white;
 }
 
 main .accessories .vertical-tabs .tabcontent .grid-container .details .buttons .cart-btn .count {
@@ -2291,6 +2347,11 @@ main .product-details .product-footer .slider-body .slider .details .buttons .ca
   margin-left: 15px;
 }
 
+main .product-details .product-footer .slider-body .slider .details .buttons .cart-btn:hover {
+  background: #27B5F3;
+  color: white;
+}
+
 main .product-details .product-footer .slider-body .slider .details .buttons .cart-btn .count {
   top: 0;
   left: 0;
@@ -2444,9 +2505,6 @@ main .order-request .card-body .wizard-tab .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main .order-request .card-body .wizard-tab .details h4 {
@@ -3273,7 +3331,6 @@ footer .copyright {
 .popup .popup_body .popup_contain .buttons .popup_close {
   padding: 3px 10px 5px;
   bottom: 0;
-  color: white;
   width: 170px;
   border-radius: 102px;
   height: 60px;

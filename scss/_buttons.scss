@@ -33,8 +33,8 @@
     color: $primaryColor;
     background: transparent;
     &:hover {
-        color: white;
         background: $primaryColor;
+        color: white;
         border: 1px solid transparent;
     }
 }
